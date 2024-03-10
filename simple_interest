@@ -9,7 +9,7 @@ int main()
     scanf("%f",&r);
     printf("enter the duration : ");
     scanf("%f",&t);
-    s=p*1+r*t;
+    s=p*(1+r*t);
     printf("%f",s);
     return 0;
 }
