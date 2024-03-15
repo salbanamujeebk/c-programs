@@ -28,7 +28,7 @@ int main()
             printf("SATURDAY!");
             break;
         default:
-            printf("invalid");
+            printf("It does not match!");
             break;
     }
     return 0;
