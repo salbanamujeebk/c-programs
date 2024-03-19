@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int number,remainder,total,temp;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    temp=number;
+    while(number>0)
+    {
+        remainder=number%10;
+        total=total+(remainder*remainder*remainder);
+        number=number/10;
+    }
+    if(temp==total)
+    {
+        printf("This is an armstrong number!");
+    }
+    else
+    {
+        printf("This is not an armstrong number!");
+    }
+
+    return 0;
+}
