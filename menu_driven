@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, result,choice,ans;
+    char option;
+        printf("Enter two numbers: ");
+        scanf("%d%d",&num1,&num2);
+     do {   
+        printf("Press 1 to add %d and %d\n", num1, num2);
+        printf("Press 2 to subtract %d and %d\n", num1, num2);
+        printf("Press 3 to multiply %d and %d\n", num1, num2);
+        printf("Press 4 to divide %d and %d\n", num1, num2);
+        
+        printf("Enter Your Choice: ");
+        scanf(" %d", &choice);
+        
+    switch (choice) 
+    {
+        case 1:
+            ans=num1+num2;
+            printf("addition : %d\n",ans);
+            break;
+        case 2:
+            ans=num1-num2;
+            printf("subtraction : %d\n",ans);
+            break;
+        case 3:
+            ans=num1*num2;
+            printf("multiplication : %d\n",ans);
+            break;
+        case 4:
+            ans=num1/num2;
+            printf("division : %d\n",ans);
+            break;
+        default:
+            printf("Invalid Choice\n");
+    }
+
+        printf("Do you want to continue? (Press y/n) ");
+        scanf(" %c", &option);
+
+    } 
+    while (option == 'y' || option == 'Y');
+    return 0;
+}
