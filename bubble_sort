@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[]={50,41,52,87,32,45,21,63,26};
+    int i,j,temp;
+    int n= sizeof(arr)/sizeof(arr[0]);
+   
+    for(i=0; i<n-1; i++)
+    {
+        for(j=0; j<n-i-1; j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    
+    printf("the sorted array : ");
+    for (i=0;i<n-1;i++)
+    printf(" %d",arr[i]);
+   
+    return 0;
+}
